@@ -1,0 +1,213 @@
+:root {
+    --bg-color: #0f172a;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --btn-hover: rgba(255, 255, 255, 0.1);
+    --btn-active: rgba(255, 255, 255, 0.2);
+    --operator-color: #ff9f0a; /* Modern orange */
+    --operator-hover: #ffb13b;
+    --control-color: #a5a5a5;  /* Light gray for AC/DEL */
+    --control-text: #000000;
+    --equals-bg: #3b82f6;      /* Modern blue */
+    --equals-hover: #60a5fa;
+    --font-family: 'Outfit', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background Gradients/Orbs */
+.background-mesh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+    animation: float 20s infinite ease-in-out;
+}
+
+.orb-1 {
+    width: 400px;
+    height: 400px;
+    background: #7c3aed; /* Violet */
+    top: -100px;
+    left: -100px;
+}
+
+.orb-2 {
+    width: 500px;
+    height: 500px;
+    background: #db2777; /* Pink */
+    bottom: -150px;
+    right: -150px;
+    animation-delay: -5s;
+}
+
+.orb-3 {
+    width: 300px;
+    height: 300px;
+    background: #2563eb; /* Blue */
+    top: 40%;
+    left: 40%;
+    animation-delay: -10s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(30px, -50px); }
+    66% { transform: translate(-20px, 20px); }
+}
+
+/* Calculator Container */
+.calculator-container {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    padding: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Display */
+.calculator-display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+    min-height: 120px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.previous-operand {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 8px;
+    min-height: 1.5rem;
+}
+
+.current-operand {
+    color: var(--text-primary);
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+/* Button Grid */
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Buttons */
+.btn {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.08); /* Slightly lighter glass for buttons */
+    color: var(--text-primary);
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.btn:hover {
+    background: var(--btn-hover);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    background: var(--btn-active);
+    transform: translateY(0);
+}
+
+.btn-number {
+    /* Default style */
+}
+
+/* Specific Button Styles */
+.btn-control {
+    color: var(--operator-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.btn-operator {
+    color: var(--operator-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.btn-equals {
+    background: var(--operator-color);
+    color: #fff;
+    grid-column: span 2;
+}
+
+.btn-equals:hover {
+    background: var(--operator-hover);
+    box-shadow: 0 0 15px rgba(255, 159, 10, 0.4);
+}
+
+.btn-zero {
+    grid-column: span 2; /* Make zero span 2 columns like standard calc */
+    text-align: left;
+    padding-left: 28px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .calculator-container {
+        width: 90%;
+        margin: 20px;
+        padding: 16px;
+    }
+    
+    .current-operand {
+        font-size: 3rem;
+    }
+    
+    .btn {
+        padding: 14px;
+        font-size: 1.3rem;
+    }
+}
