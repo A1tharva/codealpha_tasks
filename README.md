@@ -1,1 +1,1 @@
-this is task 1.
+These are all the task given by CodeAlpha.
