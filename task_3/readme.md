@@ -45,7 +45,13 @@ Feel free to reach out to me!
 -   **Email:** [atharvayadav5472@gmail.com](mailto:atharvayadav5472@gmail.com)
 -   **LinkedIn:** [Atharva Yadav](https://www.linkedin.com/in/atharvayadav5472)
 -   **GitHub:** [A1tharva](https://github.com/A1tharva)
-  
+
+  ![main](view/main.png)
+  ![main](view/aboutME.png)
+  ![main](view/technicalSkills.png)
+  ![main](view/Projects.png)
+  ![main](view/GetInTouch.png)
+
 ---
 ## 🎥 Website : https://atharva-yadav-portfolio.netlify.app
 ---
