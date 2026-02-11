@@ -8,7 +8,7 @@ Interactive Lightbox: Full-screen image view with navigation controls.
 Verification Results
 1. Initial Load & Design
 The gallery loads with a premium dark aesthetic. Hover effects on cards reveal the title and category.
-![MainPage]()
+![Alt Text](main.png)
 
 2. Category Filtering
 Clicking the "Nature" filter hides other categories and only shows nature-themed images.
