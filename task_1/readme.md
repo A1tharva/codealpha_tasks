@@ -24,4 +24,6 @@ Users can navigate between images within the lightbox using the arrow buttons.
 
 Verification Video
 Here is a recording of the automated verification session demonstrating the flow:
-![main](view/nature-live.mov)
+<video width="600" controls>
+  <source src="view/live.mov" type="video/mp4">
+</video>
