@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Lumina Gallery</h1>
+        <p>A visual journey through premium aesthetics</p>
+    </header>
+
+    <nav class="filter-nav">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+        <button class="filter-btn" data-filter="abstract">Abstract</button>
+    </nav>
+
+    <main class="gallery-container">
+        <!-- Gallery Items -->
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature.png" alt="Serene mountain landscape at sunset">
+            <div class="overlay">
+                <h3>Serenity</h3>
+                <p>Nature</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="city">
+            <img src="images/city.png" alt="Futuristic cyberpunk city street">
+            <div class="overlay">
+                <h3>Neon Nights</h3>
+                <p>City</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="architecture">
+            <img src="images/architecture.png" alt="Minimalist modern architecture">
+            <div class="overlay">
+                <h3>Modernist</h3>
+                <p>Architecture</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="abstract">
+            <img src="images/abstract.png" alt="Vibrant abstract fluid art">
+            <div class="overlay">
+                <h3>Fluidity</h3>
+                <p>Abstract</p>
+            </div>
+        </div>
+        
+        <!-- Duplicated items for better grid visualization (simulated content) -->
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature.png" alt="Serene mountain landscape at sunset">
+            <div class="overlay">
+                <h3>Serenity II</h3>
+                <p>Nature</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="city">
+            <img src="images/city.png" alt="Futuristic cyberpunk city street">
+            <div class="overlay">
+                <h3>Neon Nights II</h3>
+                <p>City</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-category"></p>
+            </div>
+        </div>
+        <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
