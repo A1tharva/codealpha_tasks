@@ -1,3 +1,5 @@
+# Image Gallery Walkthrough
+
 Image Gallery Walkthrough
 I have successfully designed and implemented a premium image gallery with the following features:
 
