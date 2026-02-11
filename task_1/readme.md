@@ -24,7 +24,9 @@ Users can navigate between images within the lightbox using the arrow buttons.
 
 Verification Video
 Here is a recording of the automated verification session demonstrating the flow:
-
+---
+*Created by Atharva Yadav*
+---
 ## 🎥 Website
 
 https://atharvayadav-gallery-view.netlify.app/
