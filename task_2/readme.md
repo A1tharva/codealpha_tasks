@@ -2,8 +2,7 @@
 
 A visually stunning calculator application featuring a modern **Glassmorphism** design aesthetic. This project demonstrates responsive web design, advanced CSS animations, and robust JavaScript logic to create a functional and beautiful user interface.
 
-![Calculator Preview](preview.png)
-*(Note: Add a screenshot of the calculator here named `preview.png`)*
+![Calculator Preview](view/main.png)
 
 ## 🌟 Features
 
@@ -27,20 +26,6 @@ A visually stunning calculator application featuring a modern **Glassmorphism** 
 - **JavaScript (ES6+)**: 
   - Class-based `Calculator` architecture.
   - Event delegation and DOM manipulation.
-
-## 🚀 How to Run
-
-1. **Clone the repository** (or download the files):
-   ```bash
-   git clone <repository-url>
-   ```
-2. **Navigate to the project folder**:
-   ```bash
-   cd task2
-   ```
-3. **Open the application**:
-   - Simply double-click `index.html` to open it in your default web browser.
-   - Alternatively, use a live server extension (like VS Code Live Server) for the best experience.
 
 ## ⌨️ Keyboard Shortcuts
 
@@ -76,3 +61,6 @@ You can easily change the color theme by modifying the CSS variables in the `:ro
 
 ---
 *Created by Atharva Yadav*
+---
+#  Website : 
+https://atharva-yadav-calculator.netlify.app/
