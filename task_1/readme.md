@@ -8,20 +8,20 @@ Interactive Lightbox: Full-screen image view with navigation controls.
 Verification Results
 1. Initial Load & Design
 The gallery loads with a premium dark aesthetic. Hover effects on cards reveal the title and category.
-![Alt Text](main.png)
+![main](view/main.png)
 
 2. Category Filtering
 Clicking the "Nature" filter hides other categories and only shows nature-themed images.
-
+![main](view/nature-main.png)
 
 3. Lightbox Functionality
 Clicking an image opens the lightbox with a backdrop blur. The image is centered, and details are shown below.
-
+![main](view/nature-one.png)
 
 4. Navigation
 Users can navigate between images within the lightbox using the arrow buttons.
-
+![main](view/nature-two.png)
 
 Verification Video
 Here is a recording of the automated verification session demonstrating the flow:
-
+![main](view/nature-live.mov)
